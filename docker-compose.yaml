@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./app
+    command: python manage.py runserver 0.0.0.0:8000
+    container_name: django_gravity_assist
+    volumes: 
+      - ./app/:/usr/src/app/
+    ports:
+      - 8009:8000
