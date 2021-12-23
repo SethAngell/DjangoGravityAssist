@@ -17,11 +17,6 @@ jobs:
     - name: Build docker images
       run: docker-compose up -d --build
   
-    - name: Check against flake8
-      run: docker exec django_gravity_assist flake8 .
-        
-    - name: Check against black
-      run: docker exec django_gravity_assist black . --exclude="migrations|env"
     
     - name: Test Project
       id: project_test

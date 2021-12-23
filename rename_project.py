@@ -61,6 +61,7 @@ files_to_alter = [
     "app/DjangoGravityAssist/asgi.py",
     "app/DjangoGravityAssist/settings.py",
     "app/DjangoGravityAssist/wsgi.py",
+    "app/Dockerfile.prod"
     "docker-compose.yaml",
     ".ci/docker-compose.yaml",
     ".github/workflows/build.yml",
